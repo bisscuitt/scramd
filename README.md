@@ -3,6 +3,7 @@
 A Simple MTA for forwarding mail without the need for a queue
 
 ## Features:
+ * Simple configuration in a single file
  * Forwards directly, no need for queueing
 
 TODO
@@ -14,10 +15,12 @@ TODO
  * [ ] DB / key-value store lookups
 
 ## Why does this even exist ?
-I had a requirement for a simple MTA that forwards email for multiple domains to list of other addresses. Managing a full MTA isn't required and I didn't want to have to worry about managing mail queues.
+I had a requirement for a simple MTA that forwards email for multiple addresses to another address. Managing a full MTA can take a large amount of work and dealing with mail queues can be painful. This is mainly intended for personal use.
 
 ## Configuration Reference
 All configuration is stored in `/etc/scramd.yaml`
+
+See `example_config.yaml` for more inspiration
 
 ### forwards
 The forwarding map is configured in YAML as a list of addresses bound to a forwarding address:

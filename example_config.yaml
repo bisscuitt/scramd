@@ -1,0 +1,20 @@
+hostname: mx.mydomain
+listen_address: 127.0.0.1
+listen_port: 25
+server_timeouts:
+    read: 120s
+    write: 90s
+client_timeouts:
+    connect: 90s
+    read:    30s
+    wite:    30s
+
+forwards:
+  # Forward 2 Adresses to mailbox1@my.isp
+  mailbox1@my.isp:
+    - alias@other.dom
+    - other.name@mydom.com
+  # and another 2 addresses to realuser@other.isp
+  realuser@other.isp:
+    - first.last@vanity.domain
+    - admin@vanity.domain
