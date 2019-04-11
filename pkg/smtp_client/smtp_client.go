@@ -34,9 +34,6 @@ func Start(config_in *config.Config, f string, r string) (*ForwardClient, error)
 
 	// TODO: server connection may time out before this client completes connection to remote servers
 
-	// TODO: This is debugging and needs to be removed
-	mx_hosts = []string{"127.0.0.1"}
-
 	c := &ForwardClient{
 		from: f,
 		rcpt: r,
