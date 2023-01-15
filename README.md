@@ -1,6 +1,6 @@
-# Scramd - Synchronous Channel Relay and Mailer Daemon
+# Scramd - Synchronous Concurrent Relay and Mailer Daemon
 
-A Simple MTA for forwarding mail without the need for managing a mail queue.
+A Simple MTA for forwarding mail that uses synchronous channels to relay mail in realtime.
 
 ## Features:
  * Simple configuration in a single file
