@@ -1,10 +1,10 @@
-# Scramd - Simple Crumby Relay and Mailer Daemon
+# Scramd - Synchronous Channel Relay and Mailer Daemon
 
-A Simple MTA for forwarding mail without the need for a queue
+A Simple MTA for forwarding mail without the need for managing a mail queue.
 
 ## Features:
  * Simple configuration in a single file
- * Forwards directly, no need for queueing
+ * Forwards instantly, no need for queueing
 
 TODO
  * [ ] Stats Interface
@@ -13,6 +13,7 @@ TODO
  * [ ] RBL
  * [ ] Greylisting
  * [ ] DB / key-value store lookups
+ * [ ] RFC Compliant
 
 ## Why does this even exist ?
 I had a requirement for a simple MTA that forwards email for multiple addresses to another address. Managing a full MTA can take a large amount of work and dealing with mail queues can be painful. This is mainly intended for personal use.
